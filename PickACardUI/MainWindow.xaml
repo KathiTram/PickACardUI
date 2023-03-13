@@ -15,7 +15,10 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20,20,20,2"/>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20,20,20,2">
+            <Label Content="How many cards should I pick?" d:LayoutOverrides="Width, Height" FontSize="20"/>
+            <Slider x:Name="numberOfCards" Maximum="15" Minimum="1" AutoToolTipPlacement="TopLeft" TickPlacement="BottomRight" IsSnapToTickEnabled="True" Foreground="Black"/>
+        </StackPanel>
 
     </Grid>
 </Window>
